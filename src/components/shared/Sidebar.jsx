@@ -93,7 +93,7 @@ const Sidebar = (props) => {
       </div>
 
       <div>
-        {" "}
+        
         {/*Log out*/}
         <ul className="pl-5 py-10">
           <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
