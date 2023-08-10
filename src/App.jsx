@@ -90,8 +90,11 @@ function App() {
           {/*Content*/}
           <div>
             {/*Card*/}
-            <div className="bg-emerald-600 p-8 flex flex-col item-center rounded-2xl">
-              <img src="amirali-mirhashemian-lL7MRs9UWnM-unsplash.jpg" className="w-40 h-40 rounded-3xl object-cover -mt-20"></img>
+            <div className="bg-emerald-600 p-8 flex flex-col items-center gap-2 text-center rounded-2xl ">
+              <img src="amirali-mirhashemian-lL7MRs9UWnM-unsplash.jpg" className="w-40 h-40 rounded-2xl object-cover -mt-20 shadow-2xl "></img>
+              <p>asdasd</p>
+              <span>$2000</span>
+              <p>20 wolas</p>
             </div>
           </div>
         </div>
