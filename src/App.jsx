@@ -39,8 +39,8 @@ function App() {
           {showMenu ? <BiSolidXCircle /> : <BiSolidGrid />}
         </button>
       </nav>
-      <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-5">
-        <div className="lg:col-span-6">
+      <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
+        <div className="lg:col-span-6 md:p-8">
           {/*Header*/}
           <header>
             {/*Title and Search*/}
@@ -61,7 +61,7 @@ function App() {
               </form>
             </div>
             {/*Tabs*/}
-            <nav className=" text-gray-300 flex items-center justify-between md:justify-start md:gap-8 border-b mb-6">
+            <nav className="text-gray-300 flex items-center justify-between md:justify-start md:gap-8 border-b mb-6">
               <a
                 href="#"
                 className="relative py-2 pr-4 before:w-3/4 before:h-[2px] before:absolute before:bg-[#ec7c6a] before:left-0
@@ -81,25 +81,53 @@ function App() {
             </nav>
           </header>
           {/* Title content*/}
-          <div className="flex items-center justify-between mb-20">
+          <div className="flex items-center justify-between mb-16">
             <h2 className="text-xl text-gray-300">Choose dishes</h2>
             <button className="flex items-center gap-4 text-gray-300 bg-black py-2 px-4 rounded-lg">
               <BiSolidChevronDown></BiSolidChevronDown>Ver mas
             </button>
           </div>
           {/*Content*/}
-          <div>
+          <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card*/}
-            <div className="bg-emerald-600 p-8 flex flex-col items-center gap-2 text-center rounded-2xl ">
-              <img src="amirali-mirhashemian-lL7MRs9UWnM-unsplash.jpg" className="w-40 h-40 rounded-2xl object-cover -mt-20 shadow-2xl "></img>
-              <p>asdasd</p>
-              <span>$2000</span>
-              <p>20 wolas</p>
+            <div className="bg-black p-8 flex flex-col items-center pb-4 gap-3 text-center rounded-3xl ">
+              <img src="amirali-mirhashemian-pjGnlZTtQ-Y-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+              <p className="text-xl text-gray-400">Burger Titan</p>
+              <span className="text-gray-400">$2.000</span>
+              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+            </div>
+             {/*Card*/}
+             <div className="bg-black py-10 px-10 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img src="food-photographer-E94j3rMcxlw-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+              <p className="text-xl text-gray-400">Burger Titan</p>
+              <span className="text-gray-400">$2.000</span>
+              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+            </div>
+             {/*Card*/}
+             <div className="bg-black p-12 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img src="food-photographer-Fn6dPYtPUMc-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+              <p className="text-xl text-gray-400">Burger Titan</p>
+              <span className="text-gray-400">$2.000</span>
+              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+            </div>
+             {/*Card*/}
+             <div className="bg-black p-8 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img src="food-photographer-X92WLoaQ1_o-unsplash (1).jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+              <p className="text-xl text-gray-400">Burger Titan</p>
+              <span className="text-gray-400">$2.000</span>
+              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+            </div>
+             {/*Card*/}
+             <div className="bg-black p-8 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img src="amirali-mirhashemian-lL7MRs9UWnM-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+              <p className="text-xl text-gray-400">Burger Titan</p>
+              <span className="text-gray-400">$2.000</span>
+              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
             </div>
           </div>
         </div>
 
-        <div className="lg:col-span-2 bg-red-500 fixed lg:static right-0">Carrito</div>
+        <div className="lg:col-span-2 bg-[#bf974d] fixed lg:static right-0">Carrito</div>
           
         
       </main>

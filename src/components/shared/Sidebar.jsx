@@ -24,7 +24,7 @@ const Sidebar = (props) => {
         <ul className="pl-5">
           <li>
             {/*Icon Logo*/}
-            <h1 className="text-[#F4CF2A] my-8 flex justify-items-center">
+            <h1 className="text-[#bf974d] my-8 flex justify-items-center">
               <a href="#">
                 <img
                   src="vecteezy_burger-3d-illustration_13167062_30.png"
@@ -37,7 +37,7 @@ const Sidebar = (props) => {
             {/*Icon Home*/}
             <a
               href="#"
-              className="bg-[#F4CF2A] p-4  rounded-xl flex justify-center"
+              className="bg-[#bf974d] p-4  rounded-xl flex justify-center"
             >
               <BiSolidHome className="text-2xl"></BiSolidHome>
             </a>
@@ -46,7 +46,7 @@ const Sidebar = (props) => {
             {/*Icon Dollar*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#F4CF2A] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
             >
               <BiSolidBadgeDollar className="text-2xl"></BiSolidBadgeDollar>
             </a>
@@ -55,7 +55,7 @@ const Sidebar = (props) => {
             {/*Icon Chat*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#F4CF2A] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
             >
               <BiSolidChat className="text-2xl"></BiSolidChat>
             </a>
@@ -64,7 +64,7 @@ const Sidebar = (props) => {
             {/*Icon Trash*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#F4CF2A] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
             >
               <BiSolidTrashAlt className="text-2xl"></BiSolidTrashAlt>
             </a>
@@ -74,7 +74,7 @@ const Sidebar = (props) => {
             {/*Icon Notification*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#F4CF2A] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
             >
               <BiSolidBell className="text-2xl"></BiSolidBell>
             </a>
@@ -84,7 +84,7 @@ const Sidebar = (props) => {
             {/*Icon Settings*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#F4CF2A] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
             >
               <BiSolidWrench className="text-2xl"></BiSolidWrench>
             </a>
@@ -101,7 +101,7 @@ const Sidebar = (props) => {
             {/*Icon Log out*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#F4CF2A] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
             >
               <BiSolidLogIn className="text-2xl"></BiSolidLogIn>
             </a>

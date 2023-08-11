@@ -26,8 +26,8 @@ React. Tailwind css. React Icon
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Color Primary | ![#000000](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
+| Color Secondary | ![#F4CF2A](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
+| Color Color | ![#262626](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
+| Color Color | ![rgb(209 213 219](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
