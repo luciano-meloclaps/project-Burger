@@ -11,6 +11,8 @@ import {
   BiSolidXCircle,
   BiSearch,
   BiSolidChevronDown,
+  BiX,
+  BiSolidTrashAlt,
 } from "react-icons/bi";
 
 function App() {
@@ -91,45 +93,133 @@ function App() {
           <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card*/}
             <div className="bg-black p-8 flex flex-col items-center pb-4 gap-3 text-center rounded-3xl ">
-              <img src="amirali-mirhashemian-pjGnlZTtQ-Y-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+              <img
+                src="food-photographer-Fn6dPYtPUMc-unsplash-removebg-preview (6).png"
+                className="w-40 h-40 rounded-3xl  object-cover -mt-20 shadow-2xl "
+              ></img>
               <p className="text-xl text-gray-400">Burger Titan</p>
               <span className="text-gray-400">$2.000</span>
-              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+              <p className="text-gray-600">
+                Crema titan, Rucula, Queso Mozzarella, Blen de carne
+              </p>
             </div>
-             {/*Card*/}
-             <div className="bg-black py-10 px-10 flex flex-col items-center gap-3 text-center rounded-3xl ">
-              <img src="food-photographer-E94j3rMcxlw-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+            {/*Card*/}
+            <div className="bg-black py-10 px-10 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img
+                src="amirali-mirhashemian-pjGnlZTtQ-Y-unsplash-removebg-preview (2).png"
+                className="w-40 h-40 rounded-3xl object-cover -mt-20 shadow-2xl "
+              ></img>
               <p className="text-xl text-gray-400">Burger Titan</p>
               <span className="text-gray-400">$2.000</span>
-              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+              <p className="text-gray-600">
+                Crema titan, Rucula, Queso Mozzarella, Blen de carne
+              </p>
             </div>
-             {/*Card*/}
-             <div className="bg-black p-12 flex flex-col items-center gap-3 text-center rounded-3xl ">
-              <img src="food-photographer-Fn6dPYtPUMc-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+            {/*Card*/}
+            <div className="bg-black p-12 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img
+                src="food-photographer-X92WLoaQ1_o-unsplash-removebg-preview.png"
+                className="w-40 h-40 rounded-3xl object-cover -mt-20 shadow-2xl "
+              ></img>
               <p className="text-xl text-gray-400">Burger Titan</p>
               <span className="text-gray-400">$2.000</span>
-              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+              <p className="text-gray-600">
+                Crema titan, Rucula, Queso Mozzarella, Blen de carne
+              </p>
             </div>
-             {/*Card*/}
-             <div className="bg-black p-8 flex flex-col items-center gap-3 text-center rounded-3xl ">
-              <img src="food-photographer-X92WLoaQ1_o-unsplash (1).jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+            {/*Card*/}
+            <div className="bg-black p-8 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img
+                src="food-photographer-X92WLoaQ1_o-unsplash (1).jpg"
+                className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "
+              ></img>
               <p className="text-xl text-gray-400">Burger Titan</p>
               <span className="text-gray-400">$2.000</span>
-              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+              <p className="text-gray-600">
+                Crema titan, Rucula, Queso Mozzarella, Blen de carne
+              </p>
             </div>
-             {/*Card*/}
-             <div className="bg-black p-8 flex flex-col items-center gap-3 text-center rounded-3xl ">
-              <img src="amirali-mirhashemian-lL7MRs9UWnM-unsplash.jpg" className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "></img>
+            {/*Card*/}
+            <div className="bg-black p-8 flex flex-col items-center gap-3 text-center rounded-3xl ">
+              <img
+                src="amirali-mirhashemian-lL7MRs9UWnM-unsplash.jpg"
+                className="w-40 h-40 rounded-full object-cover -mt-20 shadow-2xl "
+              ></img>
               <p className="text-xl text-gray-400">Burger Titan</p>
               <span className="text-gray-400">$2.000</span>
-              <p className="text-gray-600">Crema titan, Rucula, Queso Mozzarella, Blen de carne</p>
+              <p className="text-gray-600">
+                Crema titan, Rucula, Queso Mozzarella, Blen de carne
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="lg:col-span-2 bg-[#bf974d] fixed lg:static right-0">Carrito</div>
-          
-        
+        <div className="lg:col-span-2 bg-[#262626] fixed lg:static right-0 top-0 w-full h-full">
+          {/* Orders */}
+          <div className="relative pt-16 text-gray-300 p-8">
+            <BiX className="absolute rounded-full bg-black text-xl left-4 top-4 p-3 box-content text-gray-300" />
+            <h1 className="text-2xl mt-4">Orde</h1>
+            {/* Pills */}
+            <div className="flex items-center gap-4 flex-wrap mb-8">
+              <button className="bg-yellow-400 text-black py-2 px-4 rounded-2xl">
+                Take Await
+              </button>
+              <button className=" text-yellow-400 py-2 px-4 rounded-2xl border border-gray-500">
+                Delivery
+              </button>
+              <button className=" text-yellow-400 py-2 px-4 rounded-2xl border border-gray-500">
+                Comer en el lugar
+              </button>
+            </div>
+            {/*Car*/}
+            <div>
+              <div className="grid grid-cols-6 mb-4 p-4">
+                <h5 className="col-span-4">Item</h5>
+                <h5>Qty</h5>
+                <h5>Price</h5>
+              </div>
+            </div>
+            {/*Product*/}
+            <div className="bg-black p-4 rounded-xl mb-2">
+              <div className="grid grid-cols-6">
+                {/*Description Product*/}
+                <div className="col-span-4 flex items-center gap-3">
+                  <img
+                    className="w-10 h-10 object-cover rounded-full"
+                    src="amirali-mirhashemian-pjGnlZTtQ-Y-unsplash-removebg-preview (1).png"
+                  ></img>
+                  <div>
+                    <h5 className="text-sm">burger Titan</h5>
+                    <p className="text-xs text-gray-500">$2.000</p>
+                  </div>
+                </div>
+                {/*Qty*/}
+                <div>
+                  <span>2</span>
+                </div>
+                {/*Price Total*/}
+                <div>
+                  <span>$4.00</span>
+                </div>
+              </div>
+              {/* Note */}
+              <div className="grid grid-cols-6 items-center justify-center">
+                <form className="col-span-5">
+                  <input
+                    type="text"
+                    className="bg-[#262626] py-2  px-4 rounded-xl outline-none"
+                    placeholder="Añadir nota"
+                  ></input>
+                </form>
+                <div>
+                  <button className="border border-yellow-400 p-2 rounded-lg">
+                    <BiSolidTrashAlt className="text-yellow-400" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
