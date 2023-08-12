@@ -15,12 +15,21 @@ import {
   BiSolidTrashAlt,
 } from "react-icons/bi";
 
+//Functions
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+    //Prevenir que se abran las dos fn
+    setShowOrder(false)
+  };
+
+  const toggleOrder = () => {
+    setShowOrder (!showOrder);
+    //Prevenir que se abran las dos fn
+    setShowMenu(false)
   };
 
   return (
@@ -35,14 +44,14 @@ function App() {
           <BiSolidUser></BiSolidUser>
         </button>
         <button>
-          <BiSolidBadgeDollar></BiSolidBadgeDollar>
+          <BiSolidBadgeDollar onClick={toggleOrder}></BiSolidBadgeDollar>
         </button>
         <button onClick={toggleMenu}>
           {showMenu ? <BiSolidXCircle /> : <BiSolidGrid />}
         </button>
       </nav>
-      <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
-        <div className="lg:col-span-6 md:p-8">
+      <main className="lg:pl-32 pb-20">
+        <div className="md:p-8 p-4">
           {/*Header*/}
           <header>
             {/*Title and Search*/}
@@ -153,73 +162,7 @@ function App() {
             </div>
           </div>
         </div>
-
-        <div className="lg:col-span-2 bg-[#262626] fixed lg:static right-0 top-0 w-full h-full">
-          {/* Orders */}
-          <div className="relative pt-16 text-gray-300 p-8">
-            <BiX className="absolute rounded-full bg-black text-xl left-4 top-4 p-3 box-content text-gray-300" />
-            <h1 className="text-2xl mt-4">Orde</h1>
-            {/* Pills */}
-            <div className="flex items-center gap-4 flex-wrap mb-8">
-              <button className="bg-yellow-400 text-black py-2 px-4 rounded-2xl">
-                Take Await
-              </button>
-              <button className=" text-yellow-400 py-2 px-4 rounded-2xl border border-gray-500">
-                Delivery
-              </button>
-              <button className=" text-yellow-400 py-2 px-4 rounded-2xl border border-gray-500">
-                Comer en el lugar
-              </button>
-            </div>
-            {/*Car*/}
-            <div>
-              <div className="grid grid-cols-6 mb-4 p-4">
-                <h5 className="col-span-4">Item</h5>
-                <h5>Qty</h5>
-                <h5>Price</h5>
-              </div>
-            </div>
-            {/*Product*/}
-            <div className="bg-black p-4 rounded-xl mb-2">
-              <div className="grid grid-cols-6">
-                {/*Description Product*/}
-                <div className="col-span-4 flex items-center gap-3">
-                  <img
-                    className="w-10 h-10 object-cover rounded-full"
-                    src="amirali-mirhashemian-pjGnlZTtQ-Y-unsplash-removebg-preview (1).png"
-                  ></img>
-                  <div>
-                    <h5 className="text-sm">burger Titan</h5>
-                    <p className="text-xs text-gray-500">$2.000</p>
-                  </div>
-                </div>
-                {/*Qty*/}
-                <div>
-                  <span>2</span>
-                </div>
-                {/*Price Total*/}
-                <div>
-                  <span>$4.00</span>
-                </div>
-              </div>
-              {/* Note */}
-              <div className="grid grid-cols-6 items-center justify-center">
-                <form className="col-span-5">
-                  <input
-                    type="text"
-                    className="bg-[#262626] py-2  px-4 rounded-xl outline-none"
-                    placeholder="Añadir nota"
-                  ></input>
-                </form>
-                <div>
-                  <button className="border border-yellow-400 p-2 rounded-lg">
-                    <BiSolidTrashAlt className="text-yellow-400" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </main>
     </div>
   );
