@@ -36,7 +36,7 @@ function App() {
       <Sidebar showMenu={showMenu} />
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
-      <nav className="bg-[#F4CF2A] lg:hidden fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
+      <nav className="bg-[#bf974d] lg:hidden fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         <button>
           <BiSolidHome></BiSolidHome>
         </button>
@@ -65,7 +65,7 @@ function App() {
           <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card*/}
             <Card
-              img="amirali-mirhashemian-pjGnlZTtQ-Y-unsplash-removebg-preview.png"
+              img="public\pexels-gonzalo-acuña-10922925.jpg"
               title="SpiderMan"
               price="$2.000"
               description="Lechucga, Tomate, Cheddar"
@@ -73,12 +73,53 @@ function App() {
 
             {/*Card*/}
             <Card
-              img="food-photographer-Fn6dPYtPUMc-unsplash-removebg-preview (1).png"
+              img="public\pexels-gonzalo-acuña-10922926.jpg"
+              title="SpiderMan"
+              price="$2.000"
+              description="Lechucga, Tomate, Cheddar"
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922927.jpg"
+              title="SpiderMan"
+              price="$2.000"
+              description="Lechucga, Tomate, Cheddar"
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922928.jpg"
+              title="SpiderMan"
+              price="$2.000"
+              description="Lechucga, Tomate, Cheddar"
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922929.jpg"
+              title="Captain America"
+              price="$2.600"
+              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922929.jpg"
+              title="Captain America"
+              price="$2.600"
+              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922929.jpg"
               title="Captain America"
               price="$2.600"
               description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
             />
           </div>
+          
         </div>
       </main>
     </div>
