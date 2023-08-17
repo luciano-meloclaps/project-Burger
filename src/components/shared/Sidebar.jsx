@@ -14,7 +14,7 @@ const Sidebar = (props) => {
 
   return (
     <div
-      className={`bg-[#000000] fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-2xl
+      className={`bg-pink-user-0 fixed lg:left-0 top-0 w-32 h-full flex flex-col justify-between py-6 rounded-tr-2xl
       rounded-br-2xl z-50 -left-full transition-all ${
         showMenu ? "left-0" : "-left-full"
       }`}
@@ -24,67 +24,67 @@ const Sidebar = (props) => {
         <ul className="pl-5">
           <li>
             {/*Icon Logo*/}
-            <h1 className="text-[#bf974d] my-8 flex justify-items-center">
+            <h1 className="my-10 flex items-center">
               <a href="#">
                 <img
-                  src="vecteezy_burger-3d-illustration_13167062_30.png"
-                  style={{ width: "85px" }}
+                  src="public\weather.png"
+                  style={{ width: "300px" }}
                 ></img>
               </a>
             </h1>
           </li>
-          <li className="bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl">
+          <li className="bg-red p-4 rounded-tl-2xl rounded-bl-2xl">
             {/*Icon Home*/}
             <a
               href="#"
-              className="bg-[#bf974d] p-4  rounded-xl flex justify-center"
+              className="bg-found-user-0 p-4 text-pink-user-0 rounded-xl flex justify-center"
             >
               <BiSolidHome className="text-2xl"></BiSolidHome>
             </a>
           </li>
-          <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+          <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {/*Icon Dollar*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-found-user-0 transition-colors "
             >
               <BiSolidBadgeDollar className="text-2xl"></BiSolidBadgeDollar>
             </a>
           </li>
-          <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+          <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {/*Icon Chat*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-found-user-0 transition-colors "
             >
               <BiSolidChat className="text-2xl"></BiSolidChat>
             </a>
           </li>
-          <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+          <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {/*Icon Trash*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-found-user-0 transition-colors "
             >
               <BiSolidTrashAlt className="text-2xl"></BiSolidTrashAlt>
             </a>
           </li>
-          <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+          <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {" "}
             {/*Icon Notification*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-red-user-0  p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-found-user-0 transition-colors "
             >
               <BiSolidBell className="text-2xl"></BiSolidBell>
             </a>
           </li>
-          <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+          <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {" "}
             {/*Icon Settings*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-found-user-0 transition-colors "
             >
               <BiSolidWrench className="text-2xl"></BiSolidWrench>
             </a>
@@ -95,12 +95,12 @@ const Sidebar = (props) => {
       <div>
         {/*Log out*/}
         <ul className="pl-5 py-10">
-          <li className="hover:bg-[#262626] p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+          <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {" "}
             {/*Icon Log out*/}
             <a
               href="#"
-              className="group-hover:bg-[#F4CF2A] p-4 flex justify-center rounded-xl text-[#bf974d] group-hover:text-[#000000] transition-colors "
+              className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-found-user-0 transition-colors "
             >
               <BiSolidLogIn className="text-2xl"></BiSolidLogIn>
             </a>

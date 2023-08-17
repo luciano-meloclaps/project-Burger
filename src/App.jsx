@@ -32,11 +32,11 @@ function App() {
   };
 
   return (
-    <div className="bg-[#262626] w-full min-h-screen">
+    <div className="bg-found-user-0 font-semibold w-full min-h-screen p-2 md:p-10">
       <Sidebar showMenu={showMenu} />
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
-      <nav className="bg-[#bf974d] lg:hidden fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
+      <nav className="bg-pink-user-0 lg:hidden fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         <button>
           <BiSolidHome></BiSolidHome>
         </button>
@@ -51,75 +51,82 @@ function App() {
         </button>
       </nav>
       <main className="lg:pl-32 lg:pr-96 pb-20">
-        <div className="md:p-8 p-4">
+        <div className="md:p-12 p-4">
           {/*Header*/}
           <Header />
           {/* Title content*/}
-          <div className="flex items-center justify-between mb-16">
-            <h2 className="text-xl text-gray-300">Choose dishes</h2>
-            <button className="flex items-center gap-4 text-gray-300 bg-black py-2 px-4 rounded-lg">
-              <BiSolidChevronDown></BiSolidChevronDown>Ver mas
+          <div className="flex items-center justify-end mb-16 mr-10">
+           {/*  <h2 className="text-xl text-gray-300 px-4">Como quieres buscar?</h2> */}
+            <button className="flex items-center gap-4 text-white-user-0 bg-pink-user-0 py-2 px-4 rounded-lg">
+              <BiSolidChevronDown></BiSolidChevronDown>Populares 🔥
             </button>
           </div>
           {/*Content*/}
           <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922925.jpg"
-              title="SpiderMan"
+              img="public\pikachu.png"
+              title="Pikachu"
+              price="$2.000"
+              description="Doble Cheddar, Doble Carne, Pan de papa, Salsa "
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922925-PhotoRoom.png-PhotoRoom.png"
+              title="Bulbasaur"
               price="$2.000"
               description="Lechucga, Tomate, Cheddar"
             />
 
             {/*Card*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922926.jpg"
-              title="SpiderMan"
+              img="public\pexels-gonzalo-acuña-10922930-PhotoRoom.png-PhotoRoom.png"
+              title="Charmander"
               price="$2.000"
               description="Lechucga, Tomate, Cheddar"
             />
 
             {/*Card*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922927.jpg"
-              title="SpiderMan"
+              img="public\pexels-gonzalo-acuña-10922929-PhotoRoom.png-PhotoRoom.png"
+              title="Psyduck"
               price="$2.000"
               description="Lechucga, Tomate, Cheddar"
             />
 
             {/*Card*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922928.jpg"
-              title="SpiderMan"
-              price="$2.000"
-              description="Lechucga, Tomate, Cheddar"
-            />
-
-            {/*Card*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922929.jpg"
-              title="Captain America"
+              img="public\pexels-gonzalo-acuña-10922931-PhotoRoom.png-PhotoRoom.png"
+              title="Squirtle"
               price="$2.600"
               description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
             />
 
             {/*Card*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922929.jpg"
-              title="Captain America"
+              img="public\pexels-gonzalo-acuña-10922926-PhotoRoom.png-PhotoRoom.png"
+              title="Snorlax"
               price="$2.600"
               description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
             />
 
             {/*Card*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922929.jpg"
-              title="Captain America"
+              img="public\pexels-gonzalo-acuña-10922931-PhotoRoom.png-PhotoRoom.png"
+              title="Meowth"
+              price="$2.600"
+              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
+            />
+
+            {/*Card*/}
+            <Card
+              img="public\food-photographer-X92WLoaQ1_o-unsplash-PhotoRoom.png-PhotoRoom3.png"
+              title="Gengar"
               price="$2.600"
               description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
             />
           </div>
-          
         </div>
       </main>
     </div>

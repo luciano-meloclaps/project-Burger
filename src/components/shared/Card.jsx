@@ -5,14 +5,14 @@ const Card = (props) => {
 
   return (
     //Card
-    <div className="bg-black p-8 flex flex-col items-center pb-4 gap-3 text-center rounded-3xl ">
+    <div className="bg-red-user-0 shadow-md p-8 mb-12 flex flex-col items-center flex-wrap pb-8 gap-3 text-center rounded-b-3xl ">
       <img
         src={img}
-        className="w-40 h-40 rounded-3xl  object-cover -mt-20 shadow-2xl "
+        className="w-56 h-56 rounded-3xl object-cover -mt-28 shadow-2xl "
       ></img>
-      <p className="text-xl text-gray-400">{title}</p>
-      <span className="text-gray-400">{price}</span>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-2xl text-white-user-0 uppercase font-bold">{title}</p>
+      <span className="text-white-user-0 text-xl">{price}</span>
+      <p className="text-gray-600 text-lg">{description}</p>
     </div>
   );
 };
