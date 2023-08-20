@@ -4,6 +4,9 @@ import Sidebar from "./components/shared/Sidebar";
 import Car from "./components/shared/Car";
 import Header from "./components/shared/Header";
 import Card from "./components/shared/Card";
+import * as React from "react";
+import { motion } from "framer-motion"
+
 
 //Libraries
 import {
@@ -14,6 +17,7 @@ import {
   BiSolidXCircle,
   BiSolidChevronDown,
 } from "react-icons/bi";
+import { Dropdown } from "@nextui-org/react";
 
 //Functions
 function App() {
@@ -36,7 +40,7 @@ function App() {
       <Sidebar showMenu={showMenu} />
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
-      <nav className="bg-pink-user-0 lg:hidden fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
+      <nav className="bg-pink-user-0 xl:hidden text-found-user-0 fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         <button>
           <BiSolidHome></BiSolidHome>
         </button>
@@ -50,19 +54,19 @@ function App() {
           {showMenu ? <BiSolidXCircle /> : <BiSolidGrid />}
         </button>
       </nav>
-      <main className="lg:pl-32 lg:pr-96 pb-20">
+      <main className="xl:pl-32 xl:col-span-2 xl:pr-96 pb-20">
         <div className="md:p-12 p-4">
           {/*Header*/}
           <Header />
           {/* Title content*/}
           <div className="flex items-center justify-end mb-16 mr-10">
-           {/*  <h2 className="text-xl text-gray-300 px-4">Como quieres buscar?</h2> */}
-            <button className="flex items-center gap-4 text-white-user-0 bg-pink-user-0 py-2 px-4 rounded-lg">
+            {/*  <h2 className="text-xl text-gray-300 px-4">Como quieres buscar?</h2> */}
+            <button className="flex items-center gap-4 text-white-user-0 bg-pink-user-0 py-2 px-4 xl:mb-20 mb-8  rounded-xl">
               <BiSolidChevronDown></BiSolidChevronDown>Populares 🔥
             </button>
           </div>
           {/*Content*/}
-          <div className="p-10 grid grid-cols-1 lg:grid-cols-3 gap-20 md:grid-cols-2 ">
+          <div className="p-10 grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card*/}
             <Card
               img="public\pikachu.png"
@@ -80,7 +84,7 @@ function App() {
             />
 
             {/*Card*/}
-            <Card
+            <Card 
               img="public\pexels-gonzalo-acuña-10922930-PhotoRoom.png-PhotoRoom.png"
               title="Charmander"
               price="$2.000"
