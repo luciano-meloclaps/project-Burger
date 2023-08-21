@@ -8,20 +8,17 @@ export const Header = () => {
       {/*Title and Search*/}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
         <div>
-          <motion.h1 
-            initial={{y: -100}}
-            animate={{ y: 0 }}
-            transition={{ ease: "easeOut", duration: .3 }}
+          <h1
             className="text-8xl text-pink-user-0 text-opacity-90 font-logo">
             Stack Burgers{""}
-          </motion.h1>
+          </h1>
         </div>
         <form>
           <div className="w-full relative">
             <BiSearch className="absolute  text-white-user-0 left-3 top-1/2 -translate-y-1/2 text-red-user-0-user-0"></BiSearch>
             <input
               type="text"
-              className="bg-pink-user-0 w-full py-2 pl-10 pr-4 rounded-xl outline-none text-white-user-0-user-0 "
+              className="bg-pink-user-0 text-found-user-0 w-full py-2 pl-10 pr-4 rounded-xl outline-none text-white-user-0-user-0 "
               placeholder="Buscar"
             />
           </div>

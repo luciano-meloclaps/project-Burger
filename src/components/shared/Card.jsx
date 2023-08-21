@@ -9,9 +9,8 @@ const Card = (props) => {
     //Card
     <motion.div
       
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
-      transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      whileHover={{ scale: 1.13 }}
+      transition={{ type: "spring", stiffness: 600, damping: 25 }}
       className=" box font-body bg-red-user-0 shadow-md p-4 mb-16 flex justify-between items-center flex-col flex-wrap pb-8 gap-3 text-center rounded-b-3xl "
     >
       <img

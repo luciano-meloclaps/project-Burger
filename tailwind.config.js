@@ -11,7 +11,7 @@ export default {
       fontFamily: {
         'logo' : ['Yellowtail','cursive'],
         'title' : ['Staatliches', 'cursive'],
-        'body' : ['Raleway', 'sans-serif'],
+        'body' : ['Montserrat', 'sans-serif'],
       },
       colors:{ 
         "pink-user" : ["#0d0d0d"],

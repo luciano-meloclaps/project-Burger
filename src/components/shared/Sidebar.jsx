@@ -8,21 +8,18 @@ import {
   BiSolidBell,
   BiSolidLogIn,
 } from "react-icons/bi";
-
+import { motion } from "framer-motion";
 const Sidebar = (props) => {
   const { showMenu } = props;
 
   return (
     <div
       className={`bg-pink-user-0 z-50 fixed xl:left-0 top-0 w-36  h-full flex flex-col justify-between py-10  rounded-br-2xl rounded-tr-2xl
- -left-full transition-all ${
-        showMenu ? "left-0" : "-left-full"
-      }`}
+ -left-full transition-all  ${showMenu ? "left-0" : "-left-full"}`}
     >
       <div>
         {/*Sidebar Items*/}
         <ul>
-          
           <li className=" pl-6 mt-10 mb-8 items-center text-center flex flex-col ">
             {/* Sidebar Logo */}
             <h1>
@@ -33,66 +30,77 @@ const Sidebar = (props) => {
               ></img>
               <a href="#"></a>
             </h1>
-            
           </li>
 
           {/* Sidebar Icon */}
-          <div className="pl-8">
+          <div className="box pl-8">
             <li className="bg-found-user-0 p-4 rounded-tl-3xl pl-5 rounded-bl-3xl">
               {/*Icon Home*/}
-              <a
+              <motion.a
                 href="#"
                 className="  bg-red-user-0 p-4 text-pink-user-0 rounded-xl flex justify-center"
+                whileHover={{ scale: 1.13}}
+                transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidHome className="text-xl xl:text-2xl"></BiSolidHome>
-              </a>
+              </motion.a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
               {/*Icon Dollar*/}
-              <a
+              <motion.a
                 href="#"
-                className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                whileHover={{ scale: 1.13}}
+                transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidBadgeDollar className="text-xl xl:text-2xl"></BiSolidBadgeDollar>
-              </a>
+              </motion.a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
               {/*Icon Chat*/}
-              <a
+              <motion.a
                 href="#"
-                className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                whileHover={{ scale: 1.13}}
+                transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidChat className="text-xl xl:text-2xl"></BiSolidChat>
-              </a>
+              </motion.a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
               {/*Icon Trash*/}
-              <a
+              <motion.a
                 href="#"
-                className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                whileHover={{ scale: 1.13}}
+                transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidTrashAlt className="text-xl xl:text-2xl"></BiSolidTrashAlt>
-              </a>
+              </motion.a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
               {" "}
               {/*Icon Notification*/}
-              <a
+              <motion.a
                 href="#"
-                className="group-hover:bg-red-user-0  p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                whileHover={{ scale: 1.13}}
+                transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
-                <BiSolidBell className="text-x xl:text-2xl"></BiSolidBell>
-              </a>
+                <BiSolidBell className="text-xl xl:text-2xl"></BiSolidBell>
+              </motion.a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
               {" "}
               {/*Icon Settings*/}
-              <a
+              <motion.a
                 href="#"
-                className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+                whileHover={{ scale: 1.13}}
+                transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidWrench className="text-xl xl:text-2xl"></BiSolidWrench>
-              </a>
+              </motion.a>
             </li>
           </div>
         </ul>
@@ -104,12 +112,14 @@ const Sidebar = (props) => {
           <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             {" "}
             {/*Icon Log out*/}
-            <a
+            <motion.a
               href="#"
-              className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+              className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
+              whileHover={{ scale: 1.13}}
+              transition={{ type: "spring", stiffness: 600, damping: 25 }}
             >
               <BiSolidLogIn className="text-xl xl:text-2xl"></BiSolidLogIn>
-            </a>
+            </motion.a>
           </li>
         </ul>
       </div>
