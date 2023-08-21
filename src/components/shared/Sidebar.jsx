@@ -14,8 +14,8 @@ const Sidebar = (props) => {
 
   return (
     <div
-      className={`bg-pink-user-0 fixed xl:left-0 top-0 w-36  h-full flex flex-col justify-between py-10 rounded-tr-2xl
-      rounded-br-2xl z-50 -left-full transition-all ${
+      className={`bg-pink-user-0 z-50 fixed xl:left-0 top-0 w-36  h-full flex flex-col justify-between py-10  rounded-br-2xl rounded-tr-2xl
+ -left-full transition-all ${
         showMenu ? "left-0" : "-left-full"
       }`}
     >
@@ -37,14 +37,14 @@ const Sidebar = (props) => {
           </li>
 
           {/* Sidebar Icon */}
-          <div className="pl-6">
-            <li className="bg-red p-4 rounded-tl-2xl pl-5 rounded-bl-2xl">
+          <div className="pl-8">
+            <li className="bg-found-user-0 p-4 rounded-tl-3xl pl-5 rounded-bl-3xl">
               {/*Icon Home*/}
               <a
                 href="#"
-                className="bg-found-user-0 p-4 text-pink-user-0 rounded-xl flex justify-center"
+                className="  bg-red-user-0 p-4 text-pink-user-0 rounded-xl flex justify-center"
               >
-                <BiSolidHome className="text-2xl"></BiSolidHome>
+                <BiSolidHome className="text-xl xl:text-2xl"></BiSolidHome>
               </a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
@@ -53,7 +53,7 @@ const Sidebar = (props) => {
                 href="#"
                 className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
               >
-                <BiSolidBadgeDollar className="text-2xl"></BiSolidBadgeDollar>
+                <BiSolidBadgeDollar className="text-xl xl:text-2xl"></BiSolidBadgeDollar>
               </a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
@@ -62,7 +62,7 @@ const Sidebar = (props) => {
                 href="#"
                 className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
               >
-                <BiSolidChat className="text-2xl"></BiSolidChat>
+                <BiSolidChat className="text-xl xl:text-2xl"></BiSolidChat>
               </a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
@@ -71,7 +71,7 @@ const Sidebar = (props) => {
                 href="#"
                 className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
               >
-                <BiSolidTrashAlt className="text-2xl"></BiSolidTrashAlt>
+                <BiSolidTrashAlt className="text-xl xl:text-2xl"></BiSolidTrashAlt>
               </a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
@@ -81,7 +81,7 @@ const Sidebar = (props) => {
                 href="#"
                 className="group-hover:bg-red-user-0  p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
               >
-                <BiSolidBell className="text-2xl"></BiSolidBell>
+                <BiSolidBell className="text-x xl:text-2xl"></BiSolidBell>
               </a>
             </li>
             <li className="hover:bg-found-user-0 p-4 rounded-tl-2xl rounded-bl-2xl group transition-colors">
@@ -91,7 +91,7 @@ const Sidebar = (props) => {
                 href="#"
                 className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
               >
-                <BiSolidWrench className="text-2xl"></BiSolidWrench>
+                <BiSolidWrench className="text-xl xl:text-2xl"></BiSolidWrench>
               </a>
             </li>
           </div>
@@ -108,7 +108,7 @@ const Sidebar = (props) => {
               href="#"
               className="group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
             >
-              <BiSolidLogIn className="text-2xl"></BiSolidLogIn>
+              <BiSolidLogIn className="text-xl xl:text-2xl"></BiSolidLogIn>
             </a>
           </li>
         </ul>

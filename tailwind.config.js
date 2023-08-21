@@ -15,7 +15,7 @@ export default {
       },
       colors:{ 
         "pink-user" : ["#0d0d0d"],
-        "red-user" : ["#f6ca19"],
+        "red-user" : [" #f6ca19"],
         "black-user" : ["#0a0908"],
         "gray-user" : ["#747474"],
         "white-user" : ["white"],

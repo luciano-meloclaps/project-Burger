@@ -1,5 +1,6 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   return (
@@ -7,10 +8,13 @@ export const Header = () => {
       {/*Title and Search*/}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
         <div>
-          <h1 className="text-8xl text-pink-user-0 text-opacity-90 font-logo">
+          <motion.h1 
+            initial={{y: -100}}
+            animate={{ y: 0 }}
+            transition={{ ease: "easeOut", duration: .3 }}
+            className="text-8xl text-pink-user-0 text-opacity-90 font-logo">
             Stack Burgers{""}
-          </h1>
-          
+          </motion.h1>
         </div>
         <form>
           <div className="w-full relative">
@@ -32,13 +36,13 @@ export const Header = () => {
         >
           Burgers
         </a>
-        <a href="#" className="py-2 text-pink-user-0  pr-4">
+        <a href="#" className="py-2 pr-4">
           Combos
         </a>
-        <a href="#" className="py-2 text-pink-user-0 pr-4">
+        <a href="#" className="py-2 pr-4">
           Fritas
         </a>
-        <a href="#" className="py-2 text-pink-user-0">
+        <a href="#" className="py-2">
           Nuggets
         </a>
       </nav>

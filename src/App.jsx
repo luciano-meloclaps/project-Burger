@@ -36,11 +36,11 @@ function App() {
   };
 
   return (
-    <div className="bg-found-user-0 font-semibold w-full min-h-screen p-2 md:p-10">
+    <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen p-2 md:p-10">
       <Sidebar showMenu={showMenu} />
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
-      <nav className="bg-pink-user-0 xl:hidden text-found-user-0 fixed w-full bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
+      <nav className="bg-pink-user-0 xl:hidden text-found-user-0 fixed w-full z-30 bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         <button>
           <BiSolidHome></BiSolidHome>
         </button>
@@ -55,7 +55,7 @@ function App() {
         </button>
       </nav>
       <main className="xl:pl-32 xl:col-span-2 xl:pr-96 pb-20">
-        <div className="md:p-12 p-4">
+        <div className="md:p-12 p-4"> 
           {/*Header*/}
           <Header />
           {/* Title content*/}

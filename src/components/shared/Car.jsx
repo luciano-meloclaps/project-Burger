@@ -10,7 +10,7 @@ const Car = (props) => {
   const { showOrder, setShowOrder } = props;
   return (
     <div
-      className={`xl:col-span-2 rounded-tl-3xl bg-pink-user-0 fixed top-0 w-full h-full xl:w-96 z-50 xl:right-0 transition-all
+      className={`xl:col-span-2 rounded-tl-2xl rounded-bl-3xl bg-pink-user-0 fixed top-0 w-full h-full xl:w-96 z-50 xl:right-0 transition-all
         ${showOrder ? "right-0" : "-right-full"}`}
     >
       {/* Orders */}
@@ -18,18 +18,18 @@ const Car = (props) => {
         {/* Button Close Menu */}
         <BiX
           onClick={() => setShowOrder(false)}
-          className="xl:hidden absolute rounded-full bg-found-user-0 text-xl left-4 top-4 p-3 box-content text-gray-300"
+          className="xl:hidden absolute rounded-full bg-red-user-0 text-xl left-4 top-4 p-3 box-content text-pink-user-0"
         />
         <h1 className="text-3xl mt-4 mb-2 font-black">Pedidos</h1>
         {/* Pills */}
         <div className="flex itesm-center gap-4 flex-wrap mb-8">
-          <button className="bg-found-user-0 text-red-user-0 py-2 px-4 rounded-2xl">
+          <button className="bg-red-user-0 text-pink-user-0 py-2 px-4 rounded-2xl">
             Take Await
           </button>
-          <button className=" text-found-user-0 py-2 px-4 rounded-2xl border border-found-user-0">
+          <button className=" text-red-user-0 py-2 px-4 rounded-2xl border border-red-user-0">
             Delivery
           </button>
-          <button className=" text-found-user-0 py-2 px-4 rounded-2xl border border-found-user-0">
+          <button className=" text-red-user-0 py-2 px-4 rounded-2xl border border-red-user-0">
             Comer en el lugar
           </button>
         </div>
@@ -206,7 +206,7 @@ const Car = (props) => {
           </div>
         </div>
         {/* Submit Payment */}
-        <div className= " rounded-bl-3xl bg-red-user-0 border-t-4 absolute w-full bottom-0 left-0 p-8">
+        <div className= " rounded-bl-2xl bg-red-user-0 border-t-4 absolute w-full bottom-0 left-0 p-8">
           <div className="flex itesm-center justify-between mb-2 ">
             <span className="text-gray-600">Descuento</span>
             <span className="text-white-user-0">$500</span>
