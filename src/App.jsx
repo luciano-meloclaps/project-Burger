@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen p-2 md:p-10">
       {/*Sidebar Component */}
-      <Sidebar  showMenu={showMenu} />
+      <Sidebar showMenu={showMenu} />
       {/*Car Component*/}
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
