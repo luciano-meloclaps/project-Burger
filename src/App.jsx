@@ -1,12 +1,14 @@
 //Components
 import { useState } from "react";
 import Sidebar from "./components/shared/Sidebar";
-import Car from "./components/shared/Car";
-import Header from "./components/shared/Header";
-import Card from "./components/shared/Card";
+import Car from "./components/car/Car";
+import Header from "./components/header/Header";
+import Card from "./components/card/Card";
+
 import * as React from "react";
 import DropdownUser from "./components/shared/DropdownUser";
 import { Dropdown } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 //Libraries
 import {
@@ -37,7 +39,7 @@ function App() {
   return (
     <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen p-2 md:p-10">
       {/*Sidebar Component */}
-      <Sidebar  showMenu={showMenu} />
+      <Sidebar showMenu={showMenu} />
       {/*Car Component*/}
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
@@ -71,31 +73,23 @@ function App() {
               img="public\pikachu.png"
               title="Pikachu"
               price="$2.000"
-              description="Doble Cheddar, Doble Carne, Pan de papa, Salsa "
+              description="Pan de papa, Cebolla, Mostaza, Ketchup, Doble Carne, Queso Cheddar"
             />
 
             {/*Card Component*/}
             <Card
               img="public\pexels-gonzalo-acuña-10922925-PhotoRoom.png-PhotoRoom.png"
               title="Bulbasaur"
-              price="$2.000"
-              description="Lechucga, Tomate, Cheddar"
+              price="$2.500"
+              description="Pan de papa, Bacon, Salsa Bulbasaur, Doble Carne, Doble Queso Cheddar."
             />
 
             {/*Card Component*/}
             <Card
               img="public\pexels-gonzalo-acuña-10922930-PhotoRoom.png-PhotoRoom.png"
               title="Charmander"
-              price="$2.000"
-              description="Lechucga, Tomate, Cheddar"
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922929-PhotoRoom.png-PhotoRoom.png"
-              title="Psyduck"
-              price="$2.000"
-              description="Lechucga, Tomate, Cheddar"
+              price="$2.500"
+              description="Pan de papa, Cebolla cryspy, Salsa charmander, Doble Carne, Doble Queso Cheddar."
             />
 
             {/*Card Component*/}
@@ -104,6 +98,14 @@ function App() {
               title="Squirtle"
               price="$2.600"
               description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
+            />
+
+            {/*Card Component*/}
+            <Card
+              img="public\pexels-gonzalo-acuña-10922929-PhotoRoom.png-PhotoRoom.png"
+              title="Psyduck"
+              price="$2.000"
+              description="Lechucga, Tomate, Cheddar"
             />
 
             {/*Card Component*/}

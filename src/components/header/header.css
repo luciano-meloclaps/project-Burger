@@ -1,0 +1,6 @@
+.active-line {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 60px;
+}
