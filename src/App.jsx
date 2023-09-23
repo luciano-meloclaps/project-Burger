@@ -1,14 +1,10 @@
 //Components
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "./components/shared/Sidebar";
 import Car from "./components/car/Car";
 import Header from "./components/header/Header";
 import Card from "./components/card/Card";
-
-import * as React from "react";
 import DropdownUser from "./components/shared/DropdownUser";
-import { Dropdown } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
 
 //Libraries
 import {
@@ -17,9 +13,11 @@ import {
   BiSolidUser,
   BiSolidBadgeDollar,
   BiSolidXCircle,
-  BiSolidChevronDown,
 } from "react-icons/bi";
 import AboutUs from "./components/aboutUs/aboutUs";
+
+//Data
+import data from "./assets/burgers.json";
 
 //Functions
 function App() {
@@ -36,6 +34,12 @@ function App() {
     //Prevenir que se abran las dos fn
     setShowMenu(false);
   };
+
+  const [burgers, setBurgers] = useState([]);
+
+  useEffect(() => {
+    setBurgers(data.burgers);
+  }, []);
 
   return (
     <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen p-2 md:p-10">
@@ -70,68 +74,14 @@ function App() {
           {/*Content*/}
           <div className="p-10 grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card Component*/}
-            <Card
-              img="public\pikachu.png"
-              title="Pikachu"
-              price="$2.000"
-              description="Pan de papa, Cebolla, Mostaza, Ketchup, Doble Carne, Queso Cheddar"
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="/pexels-gonzalo-acuña-10922925-PhotoRoom.png-PhotoRoom.png"
-              title="Bulbasaur"
-              price="$2.500"
-              description="Pan de papa, Bacon, Salsa Bulbasaur, Doble Carne, Doble Queso Cheddar."
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922930-PhotoRoom.png-PhotoRoom.png"
-              title="Charmander"
-              price="$2.500"
-              description="Pan de papa, Cebolla cryspy, Salsa charmander, Doble Carne, Doble Queso Cheddar."
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922931-PhotoRoom.png-PhotoRoom.png"
-              title="Squirtle"
-              price="$2.600"
-              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922929-PhotoRoom.png-PhotoRoom.png"
-              title="Psyduck"
-              price="$2.000"
-              description="Lechucga, Tomate, Cheddar"
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922926-PhotoRoom.png-PhotoRoom.png"
-              title="Snorlax"
-              price="$2.600"
-              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\pexels-gonzalo-acuña-10922931-PhotoRoom.png-PhotoRoom.png"
-              title="Meowth"
-              price="$2.600"
-              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
-            />
-
-            {/*Card Component*/}
-            <Card
-              img="public\food-photographer-X92WLoaQ1_o-unsplash-PhotoRoom.png-PhotoRoom3.png"
-              title="Gengar"
-              price="$2.600"
-              description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
-            />
+            {burgers.map((burger) => (
+              <Card
+                img={burger.img}
+                title={burger.title}
+                description={burger.description}
+                price={burger.price}
+              />
+            ))}
 
             <AboutUs />
           </div>

@@ -1,52 +1,60 @@
-[
-  {
-    "description": "Beef patty, lettuce, tomato, onion, pickles, ketchup, mayo",
-    "price": "8.99",
-    "title": "Classic Burger"
-  },
-  {
-    "description": "Beef patty, bacon, cheddar cheese, lettuce, tomato, onion, pickles, ketchup, mayo",
-    "price": "9.99",
-    "title": "Bacon Cheeseburger"
-  },
-  {
-    "description": "Beef patty, bacon, cheddar cheese, onion rings, BBQ sauce",
-    "price": "10.99",
-    "title": "BBQ Burger"
-  },
-  {
-    "description": "Beef patty, sautéed mushrooms, Swiss cheese, lettuce, tomato, onion, mayo",
-    "price": "9.99",
-    "title": "Mushroom Swiss Burger"
-  },
-  {
-    "description": "Beef patty, jalapenos, pepper jack cheese, lettuce, tomato, onion, spicy mayo",
-    "price": "9.99",
-    "title": "Spicy Jalapeno Burger"
-  },
-  {
-    "description": "Veggie patty, lettuce, tomato, onion, pickles, ketchup, mayo",
-    "price": "8.99",
-    "title": "Veggie Burger"
-  },
-  {
-    "description": "Beef patty, grilled pineapple, ham, Swiss cheese, lettuce, tomato, onion, teriyaki sauce",
-    "price": "10.99",
-    "title": "Hawaiian Burger"
-  },
-  {
-    "description": "Beef patty, guacamole, bacon, Swiss cheese, lettuce, tomato, onion, mayo",
-    "price": "9.99",
-    "title": "Guacamole Burger"
-  },
-  {
-    "description": "Beef patty, blue cheese, caramelized onions, lettuce, tomato, mayo",
-    "price": "10.99",
-    "title": "Blue Cheese Burger"
-  },
-  {
-    "description": "Beef patty, fried egg, bacon, cheddar cheese, lettuce, tomato, onion, ketchup, mayo",
-    "price": "9.99",
-    "title": "Breakfast Burger"
-  }
-]
+{
+  "burgers": [
+    {
+      "description": "Carne de res, queso cheddar, lechuga, tomate y salsa de mostaza y miel.",
+      "id": 1,
+      "img": "public/pexels-gonzalo-acuña-10922925-PhotoRoom.png-PhotoRoom.png",
+      "precio": 250,
+      "title": "Krusty Burger",
+      "subtitle": ""
+    },
+    {
+      "description": "Carne de pollo, queso mozzarella, champiñones, bacon y salsa barbacoa.",
+      "id": 2,
+      "img": "public/pexels-gonzalo-acuña-10922928-PhotoRoom.png-PhotoRoom.png",
+      "precio": 300,
+      "title": "Flanders Burger",
+      "subtitle": ""
+    },
+    {
+      "description": "Carne de cerdo, queso suizo, lechuga, pepinillos y salsa de mostaza.",
+      "id": 3,
+      "img": " public/pexels-gonzalo-acuña-10922931-PhotoRoom.png-PhotoRoom.png",
+      "precio": 350,
+      "title": "Burns Burger",
+      "subtitle": ""
+    },
+    {
+      "description": "Carne de ternera, queso provolone, pimiento rojo, cebolla y salsa de tomate y orégano.",
+      "id": 4,
+      "img": "public/food-photographer-X92WLoaQ1_o-unsplash-PhotoRoom.png-PhotoRoom3.png",
+      "precio": 400,
+      "title": "Doctor Hibbert Burger",
+      "subtitle": ""
+    },
+    {
+      "description": "Carne de buey, queso gouda, lechuga morada, remolacha y salsa de ajo y perejil.",
+      "id": 5,
+      "img": "public/pexels-gonzalo-acuña-10922929-PhotoRoom.png-PhotoRoom.png",
+      "precio": 450,
+      "title": "Disco Stu Burger",
+      "subtitle": ""
+    },
+    {
+      "description": "Carne de venado, queso parmesano, espinaca, zanahoria y salsa de tomate y albahaca.",
+      "id": 6,
+      "img": "public/pexels-gonzalo-acuña-10922930-PhotoRoom.png-PhotoRoom.png",
+      "precio": 500,
+      "title": "Moe Burger",
+      "subtitle": ""
+    },
+    {
+      "description": "Carne de salmón, queso crema, lechuga iceberg, pepino y salsa de eneldo y limón.",
+      "id": 7,
+      "img": "public/pexels-gonzalo-acuña-10922926-PhotoRoom.png-PhotoRoom.png",
+      "precio": 550,
+      "title": "Jefe Gorgory Burger",
+      "subtitle": ""
+    }
+  ]
+}

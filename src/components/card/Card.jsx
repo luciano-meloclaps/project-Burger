@@ -1,10 +1,9 @@
-import React from "react";
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 
 const Card = (props) => {
-  const { img, title, description, price } = props;
+  const { id, img, title, description, price } = props;
   const [countAddCar, setCountAddCar] = useState(0);
 
   return (
@@ -20,9 +19,8 @@ const Card = (props) => {
       ></img>
       <p className="text-4xl text-pink-user-0 uppercase font-title">{title}</p>
       <span className="text-pink-user-0  text-xl">{price}</span>
-      <p className="text-pink-user-0 text-sm 2xl:text-base px-12">
-        {description}
-      </p>
+      <p className="text-pink-user-0 text-base 2xl:px-8 px-4">{description}</p>
+      <p>{id}</p>
       <Button
         className="bg-pink-user-0 text-red-user-0 w-52 font-bold 2xl:w-60"
         onClick={() => {
@@ -30,10 +28,9 @@ const Card = (props) => {
           console.log(countAddCar);
         }}
       >
-        Añadir ({countAddCar})
+        Añadir {countAddCar > 0 ? `:  ${countAddCar}` : ""}
       </Button>
     </motion.div>
   );
 };
-
 export default Card;
