@@ -1,9 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 
 const Card = (props) => {
   const { img, title, description, price } = props;
+  const [countAddCar, setCountAddCar] = useState(0);
 
   return (
     //Card
@@ -21,8 +23,14 @@ const Card = (props) => {
       <p className="text-pink-user-0 text-sm 2xl:text-base px-12">
         {description}
       </p>
-      <Button className="bg-pink-user-0 text-red-user-0 w-52 font-bold 2xl:w-60 ">
-        Añadir
+      <Button
+        className="bg-pink-user-0 text-red-user-0 w-52 font-bold 2xl:w-60"
+        onClick={() => {
+          setCountAddCar(countAddCar + 1);
+          console.log(countAddCar);
+        }}
+      >
+        Añadir ({countAddCar})
       </Button>
     </motion.div>
   );

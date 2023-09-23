@@ -19,6 +19,7 @@ import {
   BiSolidXCircle,
   BiSolidChevronDown,
 } from "react-icons/bi";
+import AboutUs from "./components/aboutUs/aboutUs";
 
 //Functions
 function App() {
@@ -78,7 +79,7 @@ function App() {
 
             {/*Card Component*/}
             <Card
-              img="public\pexels-gonzalo-acuña-10922925-PhotoRoom.png-PhotoRoom.png"
+              img="/pexels-gonzalo-acuña-10922925-PhotoRoom.png-PhotoRoom.png"
               title="Bulbasaur"
               price="$2.500"
               description="Pan de papa, Bacon, Salsa Bulbasaur, Doble Carne, Doble Queso Cheddar."
@@ -131,6 +132,8 @@ function App() {
               price="$2.600"
               description="Doble Carne, Lechucga, Tomate, Cheddar, Cebolla"
             />
+
+            <AboutUs />
           </div>
         </div>
       </main>
