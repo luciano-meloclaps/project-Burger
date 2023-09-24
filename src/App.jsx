@@ -42,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen p-2 md:p-10">
+    <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen ">
       {/*Sidebar Component */}
       <Sidebar showMenu={showMenu} />
       {/*Car Component*/}
@@ -62,17 +62,17 @@ function App() {
           {showMenu ? <BiSolidXCircle /> : <BiSolidGrid />}
         </button>
       </nav>
-      <main className="xl:pl-32 xl:col-span-2 xl:pr-96 pb-20">
-        <div className="md:p-12 p-4">
+      <main className="m-0 p-0">
+        <div className="xl:pl-32 xl:col-span-2 xl:pr-96 md:p-16 py-10">
           {/*Header Component */}
           <Header />
           {/* Title content*/}
-          <div className="flex items-center justify-end mb-16 mr-10">
+          <div className="flex items-center justify-end m-8 lg:mx-28 mb-16">
             {/* Drpdown Component */}
             <DropdownUser />
           </div>
           {/*Content*/}
-          <div className="p-10 grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-20 md:grid-cols-2 ">
+          <div className="md:p-28 p-8 grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-20 md:grid-cols-2 ">
             {/*Card Component*/}
             {burgers.map((burger) => (
               <Card
@@ -82,10 +82,9 @@ function App() {
                 price={burger.price}
               />
             ))}
-
-            <AboutUs />
           </div>
         </div>
+        <AboutUs />
       </main>
     </div>
   );
