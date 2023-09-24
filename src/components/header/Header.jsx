@@ -6,7 +6,7 @@ import "./header.css";
 export const Header = () => {
   const [activeTab, setActiveTab] = useState("burgers");
   return (
-    <header className="px-6">
+    <header className="lg:px-28 px-6">
       {/*Title and Search*/}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
         <div>
