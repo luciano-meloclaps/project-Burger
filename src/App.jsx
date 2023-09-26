@@ -1,10 +1,5 @@
 //Components
 import { useState, useEffect } from "react";
-import Sidebar from "./components/shared/Sidebar";
-import Car from "./components/car/Car";
-import Header from "./components/header/Header";
-import Card from "./components/card/Card";
-import DropdownUser from "./components/shared/DropdownUser";
 
 //Libraries
 import {
@@ -14,10 +9,17 @@ import {
   BiSolidBadgeDollar,
   BiSolidXCircle,
 } from "react-icons/bi";
-import AboutUs from "./components/aboutUs/aboutUs";
 
 //Data
 import data from "./assets/burgers.json";
+
+//Components
+import BannerAboutUs from "./components/aboutUs/bannerAboutUs";
+import Sidebar from "./components/shared/Sidebar";
+import Car from "./components/car/Car";
+import Header from "./components/header/Header";
+import Card from "./components/card/Card";
+import DropdownUser from "./components/shared/DropdownUser";
 
 //Functions
 function App() {
@@ -84,7 +86,7 @@ function App() {
             ))}
           </div>
         </div>
-        <AboutUs />
+        <BannerAboutUs />
       </main>
     </div>
   );
