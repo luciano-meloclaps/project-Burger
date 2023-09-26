@@ -1,16 +1,13 @@
 import React from "react";
-import { Image } from "@nextui-org/react";
 
 function BannerAboutUs() {
   return (
     <div className="grid grid-cols-2 xl:grid-cols-9 xl:p-10 p-6 justify-items-center items-center bg-pink-user-0 text-white">
       <div className="col-span-4 xl:p-10 ml-10">
-        <Image
-          isBlurred
+        <img
+          className=" h-auto sm:w-1/4 md:w-1/2 lg:w-3/4 xl:w-full"
           src="public\sk-uVPV_nV17Tw-unsplash.jpg"
           alt="aboutUs"
-          width={800}
-          height={800}
         />
       </div>
       <div className="flex-colum text-center col-span-3 ">
