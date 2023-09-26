@@ -39,7 +39,7 @@ const Sidebar = (props) => {
               <motion.a
                 href="#"
                 className="  bg-red-user-0 p-4 text-pink-user-0 rounded-xl flex justify-center"
-                whileHover={{ scale: 1.13}}
+                whileHover={{ scale: 1.13 }}
                 transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidHome className="text-xl xl:text-2xl"></BiSolidHome>
@@ -50,7 +50,7 @@ const Sidebar = (props) => {
               <motion.a
                 href="#"
                 className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
-                whileHover={{ scale: 1.13}}
+                whileHover={{ scale: 1.13 }}
                 transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidBadgeDollar className="text-xl xl:text-2xl"></BiSolidBadgeDollar>
@@ -61,7 +61,7 @@ const Sidebar = (props) => {
               <motion.a
                 href="#"
                 className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
-                whileHover={{ scale: 1.13}}
+                whileHover={{ scale: 1.13 }}
                 transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidChat className="text-xl xl:text-2xl"></BiSolidChat>
@@ -72,7 +72,7 @@ const Sidebar = (props) => {
               <motion.a
                 href="#"
                 className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
-                whileHover={{ scale: 1.13}}
+                whileHover={{ scale: 1.13 }}
                 transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidTrashAlt className="text-xl xl:text-2xl"></BiSolidTrashAlt>
@@ -84,7 +84,7 @@ const Sidebar = (props) => {
               <motion.a
                 href="#"
                 className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
-                whileHover={{ scale: 1.13}}
+                whileHover={{ scale: 1.13 }}
                 transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidBell className="text-xl xl:text-2xl"></BiSolidBell>
@@ -96,7 +96,7 @@ const Sidebar = (props) => {
               <motion.a
                 href="#"
                 className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
-                whileHover={{ scale: 1.13}}
+                whileHover={{ scale: 1.13 }}
                 transition={{ type: "spring", stiffness: 600, damping: 25 }}
               >
                 <BiSolidWrench className="text-xl xl:text-2xl"></BiSolidWrench>
@@ -115,7 +115,7 @@ const Sidebar = (props) => {
             <motion.a
               href="#"
               className="box group-hover:bg-red-user-0 p-4 flex justify-center rounded-xl text-white-user-0 group-hover:text-pink-user-0 transition-colors "
-              whileHover={{ scale: 1.13}}
+              whileHover={{ scale: 1.13 }}
               transition={{ type: "spring", stiffness: 600, damping: 25 }}
             >
               <BiSolidLogIn className="text-xl xl:text-2xl"></BiSolidLogIn>

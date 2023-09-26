@@ -47,19 +47,20 @@ function App() {
   return (
     <div className="bg-found-user-0 font-body font-semibold w-full min-h-screen ">
       <Example />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 4 1400 309">
         <path
           fill="#0d0d0d"
           fill-opacity="1"
-          d="M0,32L60,58.7C120,85,240,139,360,138.7C480,139,600,85,720,80C840,75,960,117,1080,144C1200,171,1320,181,1380,186.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+          d="M0,96L26.7,122.7C53.3,149,107,203,160,197.3C213.3,192,267,128,320,96C373.3,64,427,64,480,85.3C533.3,107,587,149,640,138.7C693.3,128,747,64,800,69.3C853.3,75,907,149,960,186.7C1013.3,224,1067,224,1120,208C1173.3,192,1227,160,1280,160C1333.3,160,1387,192,1413,208L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
         ></path>
       </svg>
+
       {/*Sidebar Component */}
       <Sidebar showMenu={showMenu} />
       {/*Car Component*/}
       <Car showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu Celphone*/}
-      <nav className="bg-pink-user-0 xl:hidden text-found-user-0 fixed w-full z-30 bottom-0 left-0 text-3xl py-4 px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
+      <nav className="bg-pink-user-0 py-4 xl:hidden text-found-user-0 fixed w-full z-30 bottom-0 left-0 text-3xl px-12 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         <button>
           <BiSolidHome></BiSolidHome>
         </button>
@@ -74,7 +75,7 @@ function App() {
         </button>
       </nav>
       <main className="m-0 p-0">
-        <div className="xl:pl-32 xl:col-span-2 xl:pr-96 md:p-16 pt-10">
+        <div className="xl:pl-32 xl:col-span-2 xl:pr-96">
           {/*Header Component */}
           <Header />
           {/* Title content*/}
@@ -96,13 +97,14 @@ function App() {
           </div>
         </div>
       </main>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 1440 330">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 309">
         <path
           fill="#0d0d0d"
           fill-opacity="1"
-          d="M0,224L48,234.7C96,245,192,267,288,245.3C384,224,480,160,576,144C672,128,768,160,864,149.3C960,139,1056,85,1152,80C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,256L26.7,245.3C53.3,235,107,213,160,213.3C213.3,213,267,235,320,208C373.3,181,427,107,480,101.3C533.3,96,587,160,640,165.3C693.3,171,747,117,800,106.7C853.3,96,907,128,960,128C1013.3,128,1067,96,1120,90.7C1173.3,85,1227,107,1280,122.7C1333.3,139,1387,149,1413,154.7L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
         ></path>
       </svg>
+
       <BannerAboutUs />
     </div>
   );
