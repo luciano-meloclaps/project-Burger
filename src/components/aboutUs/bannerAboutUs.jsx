@@ -17,7 +17,7 @@ function BannerAboutUs() {
         <h1 className="xl:text-6xl md:text-6xl text-4xl text-red-user-0 font-title my-5">
           Sobre nosotros
         </h1>
-        <p className="xl:text-xl md:text-xl text-sm font-body text-center px-10">
+        <p className="xl:text-xl md:text-xl text-sm text-found-user-0 font-body text-center px-10">
           Somos un restaurante de hamburguesas que se enorgullece de servir solo
           los ingredientes más frescos y de alta calidad. Nuestro objetivo es
           brindar una experiencia gastronómica única y satisfacer a nuestros
