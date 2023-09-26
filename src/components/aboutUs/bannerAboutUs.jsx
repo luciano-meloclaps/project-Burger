@@ -8,9 +8,9 @@ function BannerAboutUs() {
         <Image
           isBlurred
           src="public\sk-uVPV_nV17Tw-unsplash.jpg"
-          alt="Logo"
-          width={1000}
-          height={1000}
+          alt="aboutUs"
+          width={800}
+          height={800}
         />
       </div>
       <div className="flex-colum text-center col-span-3 ">
