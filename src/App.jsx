@@ -22,6 +22,7 @@ import Card from "./components/card/Card";
 import DropdownUser from "./components/shared/DropdownUser";
 import Example from "./components/hero/Hero";
 import { Modal } from "@nextui-org/react";
+import Footer from "./components/footer/Footer";
 
 //Functions
 function App() {
@@ -107,6 +108,7 @@ function App() {
       </svg>
 
       <BannerAboutUs />
+      <Footer />
     </div>
   );
 }
