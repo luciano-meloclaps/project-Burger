@@ -21,6 +21,7 @@ import Header from "./components/header/Header";
 import Card from "./components/card/Card";
 import DropdownUser from "./components/shared/DropdownUser";
 import Example from "./components/hero/Hero";
+import { Modal } from "@nextui-org/react";
 
 //Functions
 function App() {
