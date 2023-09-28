@@ -49,7 +49,7 @@ export const Header = () => {
           Nuggets
           {activeTab === "nuggets" && <div className="active-line" />}
         </a>
-        <form className="">
+        {/*<form className="">
           <div className="w-full relative">
             <BiSearch className="absolute  text-white-user-0 left-3 top-1/2 -translate-y-1/2 text-red-user-0-user-0"></BiSearch>
             <input
@@ -58,7 +58,7 @@ export const Header = () => {
               placeholder="Buscar"
             />
           </div>
-        </form>
+        </form>*/}
       </nav>
     </header>
   );
